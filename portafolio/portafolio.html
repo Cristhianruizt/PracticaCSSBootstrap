@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+
+    <link rel="icon" href="../img/mundito.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/buscar.css">
+    <link rel="stylesheet" href="../css/portafolio.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Trayectoria de aprendizaje en desarrollo web</h1>
+        <p>Esta página muestra mi trabajo y habilidades.</p>
+    </header>
+
+    <nav style="color: aliceblue;">
+        <a href="../index.html">
+            <i class="fa-solid fa-house"></i>
+            Inicio
+        </a>
+
+        <a href="buscar.html">Buscar</a>
+
+        <a href="cto/contacto.html">
+            <i class="fa-solid fa-envelope"></i>
+            Contacto
+        </a>
+        <a class="class_btn_nav_2" id="intereses" href="#intereses">Intereses</a>
+
+        <a class="class_btn_nav_2" id="multimedia" href="#multimedia">Multimedia</a>
+    </nav>
+
+    <main>
+
+        <section id="introduccion" class="intro-perfil">
+            <h2>Mi Trayectoria</h2>
+            <p>
+                ¡Hola! Soy Cristhian, estudiante de Ingeniería en Tecnologías de la Información.
+                Este portafolio documenta mi progreso y las herramientas tecnológicas que estoy
+                dominando a lo largo de mi carrera, con un enfoque en interfaces web,
+                estructuras de datos y arquitectura de redes.
+            </p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Áreas de Conocimiento</h2>
+
+            <div class="contenedor-tarjetas">
+                <article class="tarjeta">
+                    <h3>Desarrollo Web</h3>
+                    <p>Creación de interfaces estructuradas y responsivas utilizando HTML5 semántico y técnicas de
+                        maquetación avanzada con CSS3.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Bases de Datos y Lógica</h3>
+                    <p>Gestión de información estructurada mediante SQL y Access, además de resolución de métodos
+                        numéricos
+                        aplicando herramientas como Scilab y MATLAB.</p>
+                </article>
+
+                <article class="tarjeta">
+                    <h3>Infraestructura de Redes</h3>
+                    <p>Configuración de equipos, diseño de topologías, implementación de VLANs y subnetting (VLSM)
+                        apoyado
+                        en el currículo de Cisco CCNA y Packet Tracer.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="resumen-tecnico">
+            <h2>Resumen de Tecnologías</h2>
+            <table border="1" class="tabla-portfolio">
+                <caption>Nivel de dominio actual</caption>
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Área</th>
+                        <th>Nivel / Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML & CSS</td>
+                        <td>Frontend</td>
+                        <td>Avanzado (Diseño Responsivo)</td>
+                    </tr>
+                    <tr>
+                        <td>SQL</td>
+                        <td>Backend / Datos</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>Packet Tracer</td>
+                        <td>Redes</td>
+                        <td>En curso (Prácticas CCNA)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="metas">
+            <h2>Avance de Metas</h2>
+            <p>Diseño Responsivo (Media Queries):</p>
+            <progress value="90" max="100"></progress> <span>90%</span>
+
+            <p>Implementación de Flexbox/Grid:</p>
+            <progress value="80" max="100"></progress> <span>80%</span>
+        </section>
+
+        <section id="multimedia">
+            <h2>Institución de Referencia</h2>
+            <figure class="imagen-destacada">
+                <img src="../img/espe/imagenEjemploEspe.png" alt="Logo de la ESPE" width="300">
+                <figcaption>Universidad de las Fuerzas Armadas ESPE.</figcaption>
+            </figure>
+        </section>
+
+        <section id="multimedia2">
+            <h2>Contenido multimedia</h2>
+
+            <article>
+                <h3>Video local</h3>
+
+                <video src="../video/videoEjemploDiagnostica.mp4" controls width="400"
+                    poster="../img/espe/imagenEjemploEspe.png" muted loop>
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </article>
+
+            <article>
+                <h3>Audio local</h3>
+
+                <audio src="../audio/audioEjemploA7X.mp3" controls loop preload="metadata">
+                    Tu navegador no soporta la etiqueta de audio.
+                </audio>
+            </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Cristhian Ruiz.</p>
+        <p>Página de Portafolio para enseñar mis habilidades.</p>
+    </footer>
+
+</body>
+
+</html>
