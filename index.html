@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body>
+<body class="bg-light">
 
-    <header class="bg-dark text-white text-center py-5">
+    <header class="bg-dark text-white text-center py-5 shadow">
         <div class="container">
             <h1 class="display-4 fw-bold">Mi perfil profesional</h1>
             <p class="lead">Práctica de Bootstrap 5: Integración de Componentes Responsivos</p>
@@ -38,7 +38,7 @@
                     <li class="nav-item"><a class="nav-link text-dark" href="pages/buscar.html">BUSCAR</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="pages/cto/contacto.html">CONTACTO</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="portafolio/portafolio.html">PORTAFOLIO</a></li>
-                    <li class="nav-item"><a class="nav-link btn btn-light text-success fw-bold px-3" href="pages/proyeccion.html">PROYECCIÓN</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-light text-success fw-bold px-3 shadow-sm" href="pages/proyeccion.html">PROYECCIÓN</a></li>
                 </ul>
             </div>
         </div>
@@ -112,6 +112,34 @@
                     </div>
                 </section>
 
+                <section class="card shadow-sm p-4 mb-4 bg-light">
+                    <h2 class="h4">Formularios de Práctica</h2>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <h5 class="h6">Búsqueda</h5>
+                            <form method="GET" action="pages/buscar.html" class="p-3 bg-white rounded shadow-sm">
+                                <div class="mb-2">
+                                    <label for="tema" class="form-label small fw-bold">Tema:</label>
+                                    <input type="text" id="tema" name="tema" class="form-control form-control-sm" required>
+                                </div>
+                                <button type="submit" class="btn btn-success btn-sm w-100 mt-2">Buscar</button>
+                            </form>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="h6">Horario</h5>
+                            <form method="GET" action="pages/buscar.html" class="p-3 bg-white rounded shadow-sm">
+                                <div class="mb-2">
+                                    <label class="form-label small fw-bold">Asignatura:</label>
+                                    <select name="asignatura" class="form-select form-select-sm" required>
+                                        <option value="programacion">Programación</option>
+                                        <option value="redes">Redes</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-sm w-100 mt-2">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
                 <section class="card shadow-sm p-4 mb-4">
                     <h2>Avance del curso</h2>
                     <div class="mb-3">
@@ -131,7 +159,7 @@
             </main>
 
             <aside class="col-lg-4">
-                <div class="card p-4 mb-4 shadow-sm bg-light">
+                <div class="card p-4 mb-4 shadow-sm bg-light border-0">
                     <h2 class="h4">Institución</h2>
                     <figure class="text-center">
                         <img src="img/espe/imagenEjemploEspe.png" alt="Logo ESPE" class="img-fluid mb-2">
@@ -139,9 +167,9 @@
                     </figure>
                 </div>
 
-                <div class="card p-4 shadow-sm bg-dark text-white">
+                <div class="card p-4 shadow-sm bg-dark text-white border-0">
                     <h2 class="h4 text-warning">Dato adicional</h2>
-                    <p class="small">Bootstrap permite que los elementos no se desborden en pantallas táctiles.</p>
+                    <p class="small mb-0">Bootstrap 5 utiliza un sistema de rejilla flexible que permite que los elementos no se desborden en pantallas táctiles, garantizando el enfoque Mobile First.</p>
                 </div>
             </aside>
 
